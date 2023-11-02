@@ -69,7 +69,8 @@ body, html {
     font-size: 20px;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    margin-left: 10%;
+    margin-right: 400px;
 }
 
 .info a {
@@ -118,6 +119,7 @@ body, html {
     width: 250px;
     height: 91.5%;
     margin-top: -5px;
+    margin-bottom: -1px;
 }
 
 #skillsPage .index {
