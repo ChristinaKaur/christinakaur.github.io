@@ -78,6 +78,10 @@ body, html {
     color: #4c5a74;
 }
 
+.info a:hover {
+    text-decoration: underline;
+}
+
 #homePage a {
     padding-top: 10px;
     font-size: 70px;
