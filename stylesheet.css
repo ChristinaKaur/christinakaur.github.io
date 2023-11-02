@@ -5,6 +5,13 @@ p, h2, .title, .index, a {
     line-height: normal;
 }
 
+.title {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -58,7 +65,10 @@ body, html {
 }
 
 .info p {
-    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .info a {
@@ -95,18 +105,18 @@ body, html {
 }
 
 #indexPage .index a {
-    margin-bottom: 20px;
     font-size: 50px;
     font-weight: 700;
 }
 
 #more .index {
+    float: right;
     text-align: center;
     justify-content: center;
-    float: right;
-    margin-left: 10px;
-    width: 300px;
-    height: 70%;
+    align-items: center;
+    width: 250px;
+    height: 91.5%;
+    margin-top: -5px;
 }
 
 #skillsPage .index {
@@ -131,12 +141,6 @@ body, html {
 
 .bottomPalette, .topPalette {
     width: 100%;
-}
-
-.title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
 }
 
 
