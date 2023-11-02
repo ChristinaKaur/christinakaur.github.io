@@ -1,13 +1,8 @@
-p, h2, .title, .index {
+p, h2, .title, .index, a {
     font-family: "Inria Sans", sans-serif;
     font-style: normal;
     color: #000;
     line-height: normal;
-}
-
-.info a {
-    text-decoration: none;
-    color: #4c5a74;
 }
 
 body, html {
@@ -21,8 +16,9 @@ body, html {
 }
 
 .flip-card {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 323px;
+    margin: 100px auto;
     perspective: 1000px;
 }
 
@@ -30,6 +26,7 @@ body, html {
     position: relative;
     width: 100%;
     height: 100%;
+    text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -42,7 +39,7 @@ body, html {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
 
@@ -54,20 +51,25 @@ body, html {
     text-align: center;
 }
 
-#homePage .flip-card{
-    margin: auto;
-    width: 50%;
-    padding: 10%;
-}
-
 .info {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.info p{
+.info p {
     margin-left: 10px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #4c5a74;
+}
+
+#homePage a {
+    padding-top: 10px;
+    font-size: 70px;
+    font-weight: 700;
 }
 
 #indexPage, #homePage {
@@ -85,10 +87,42 @@ body, html {
     align-items: center;
 }
 
+.index {
+    display: grid;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 #indexPage .index a {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 50px;
     font-weight: 700;
+}
+
+#more .index {
+    text-align: center;
+    justify-content: center;
+    float: right;
+    margin-left: 10px;
+    width: 300px;
+    height: 70%;
+}
+
+#skillsPage .index {
+    background-color: #809BCE;
+}
+
+#academicPage .index {
+    background-color: #95B8D1;
+}
+
+#workPage .index {
+    background-color: #B8E0D2;
+}
+
+#languagePage .index {
+    background-color: #D6EADF;
 }
 
 .bottomPalette {
@@ -105,10 +139,5 @@ body, html {
     font-weight: 700;
 }
 
-.index {
-    display: grid;
-    font-size: 20px;
-    font-weight: 700;
-}
 
 
