@@ -1,0 +1,114 @@
+p, h2, .title, .index {
+    font-family: "Inria Sans", sans-serif;
+    font-style: normal;
+    color: #000;
+    line-height: normal;
+}
+
+.info a {
+    text-decoration: none;
+    color: #4c5a74;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#homePage img {
+    width: 500px;
+}
+
+.flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+#homePage {
+    text-align: center;
+}
+
+#homePage .flip-card{
+    margin: auto;
+    width: 50%;
+    padding: 10%;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.info p{
+    margin-left: 10px;
+}
+
+#indexPage, #homePage {
+    background: url(palette.svg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#indexPage {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#indexPage .index a {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.bottomPalette {
+    rotate: 180deg;
+}
+
+.bottomPalette, .topPalette {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.index {
+    display: grid;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
